@@ -1,0 +1,120 @@
+Document Type: WSE
+item: Global
+  Version=9.02
+  Title=Ubehage's EasyCopy v2.4.1
+  Flags=01010100
+  Languages=65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Copy Default=1
+  Japanese Font Name=MS Gothic
+  Japanese Font Size=9
+  Start Gradient=0 0 255
+  End Gradient=0 0 0
+  Windows Flags=00000100000000100010110000000010
+  Message Font=MS Sans Serif
+  Font Size=8
+  Icon Pathname=C:\Users\Ubehage\Desktop\vb code\EasyCopy2\Installer Icon.ico
+  Extra Flags=00000000000000000000010000000000
+  Pages Modified=00011000011000100000000000000000
+  Extra Pages=00000000000000000000000000110000
+  Disk Label=Default
+  Disk Filename=SETUP
+  Patch Flags=0000000000000001
+  Patch Threshold=85
+  Patch Memory=4000
+  MIF PDF Version=1.0
+  MIF SMS Version=2.0
+  EXE Filename=C:\Users\Ubehage\Desktop\vb code\EasyCopy2\Ubehage's EasyCopy v2.4.1.exe
+  FTP Cluster Size=20
+  Per-User Version ID=1
+  Dialogs Version=7
+  Version File=2.4.1.0
+  Version Description=Ubehage's EasyCopy v2.4.1
+  Version Copyright=Ube Hage
+  Version Company=Ubehage
+  Crystal Format=10111100101100000010001001001001
+  Step View=&Properties
+  Variable Name1=_INIT_WINDOW_
+  Variable Default1=HIDE
+  Variable Flags1=00001000
+  Variable Name2=_SYS_
+  Variable Default2=C:\Windows\system32
+  Variable Flags2=00001000
+  Variable Name3=_WIN_
+  Variable Default3=C:\Windows
+  Variable Flags3=00001000
+  Variable Name4=_WISE_
+  Variable Default4=C:\Program Files (x86)\Wise Installation System
+  Variable Flags4=00001000
+end
+item: Set Variable
+  Variable=APP_NAME
+  Value=Ubehage's EasyCopy v2.4.1
+end
+item: Get Environment Variable
+  Variable=USER_PATH
+  Environment=USERPROFILE
+end
+item: Set Variable
+  Variable=DESK_PATH
+  Value=%USER_PATH%\Desktop
+end
+item: Get Environment Variable
+  Variable=PROG_PATH
+  Environment=PROGRAMFILES
+end
+item: Browse for Directory
+  Variable=INST_PATH
+  Flags=0
+  Window Name=Select Installation Folder
+  Prompt Description=Select the folder where you want to install %APP_NAME%
+  Default Value=%PROG_PATH%\EasyCopy2
+end
+item: Create Directory
+  Pathname=%INST_PATH%
+end
+item: Set Variable
+  Variable=APP_FILE
+  Value=%INST_PATH%\EasyCopy2.exe
+end
+item: Install File
+  Source=C:\Windows\SysWOW64\COMCTL32.OCX
+  Destination=%SYS32%\COMCTL32.OCX
+  Flags=0001001010100011
+  Extra Flags=00000001
+end
+item: Install File
+  Source=C:\Users\Ubehage\Dropbox\VB Dev\regobj.dll
+  Destination=%SYS32%\regobj.dll
+  Flags=0001001010101010
+end
+item: Install File
+  Source=C:\Users\Ubehage\Desktop\vb code\EasyCopy2\EasyCopy2.exe
+  Destination=%APP_FILE%
+  Flags=0000000010100010
+end
+item: Install File
+  Source=C:\Users\Ubehage\Desktop\vb code\EasyCopy2\EasyCopy2DLL.dll
+  Destination=%INST_PATH%\EasyCopy2DLL.dll
+  Flags=0001001010100010
+end
+item: Install File
+  Source=C:\Users\Ubehage\Desktop\vb code\EasyCopy2\EasyCopy2CMD.exe
+  Destination=%INST_PATH%\EasyCopy2CMD.exe
+  Flags=0000000010100010
+end
+item: Self-Register OCXs/DLLs
+end
+item: Create Shortcut
+  Source=%APP_FILE%
+  Destination=%DESK_PATH%\Ubehage's EasyCopy v2.4.1.lnk
+  Working Directory=%INST_PATH%
+  Key Type=1536
+  Flags=00000001
+end
+item: Display Message
+  Title=Installation complete!
+  Text=%APP_NAME% has been installed on your computer.
+  Text=
+  Text=A shortcut has been created on your desktop.
+  Flags=00100100
+end

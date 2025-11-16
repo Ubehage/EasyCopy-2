@@ -1,0 +1,14 @@
+SystemClass = 100, 100, 1209, 733, C
+modGlobal = 125, 125, 1234, 758, C
+FolderItem = 75, 75, 1184, 708, C
+frmObj = 200, 200, 1309, 833, C, 175, 175, 1284, 808, C
+CopyJob = 150, 150, 1259, 783, C
+JobItem = 175, 175, 1284, 808, C
+CopyJobs = 25, 25, 1134, 658, C
+modLoadSave = 150, 150, 1259, 783, C
+modObjForm = 225, 225, 1334, 858, C
+EasyTimer = 200, 200, 1309, 833, C
+modTimer = 225, 225, 1334, 858, C
+modFileSystem = 225, 225, 1426, 796, C
+modCMD = 125, 125, 1234, 758, C
+HugeBinaryFile = 275, 275, 1384, 908, C

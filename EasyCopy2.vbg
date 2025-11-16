@@ -1,0 +1,4 @@
+VBGROUP 5.0
+Project=DLL\EasyCopy2DLL.vbp
+StartupProject=EasyCopy2.vbp
+Project=CMD\EasyCopy2CMD.vbp
