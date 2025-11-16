@@ -70,10 +70,11 @@ The code is imperfect, but does its job; architecture decisions reflect the time
 
 ## License
 
-Released under MIT or Public Domain (choose as you prefer).
+Released under MIT License.
 
 ## Contributions
 
 Improvements welcomed! If you modernize the visuals, fix icon code, or refactor the architecture, please consider sharing.
+
 
 ---
